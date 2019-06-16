@@ -1,0 +1,19 @@
+Web app: https://agile-tundra-31535.herokuapp.com/
+
+Mock User Credentials
+    Username: ta@mail.utoronto.ca
+    Password: catsarecool1
+
+Admin
+    Username: admin@123
+    Password: hello123
+
+New features:
+- Implement API endpoints /pet, /user, /image
+- Admin dashboard can edit all data.
+- Use API calls to fetch and write data.
+- Redesign of home page.
+- Deployment to Heroku.
+- Use database as a service Mongo Atlas.
+- CSS restyling of landing page.
+- Image upload to database.

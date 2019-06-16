@@ -1,0 +1,33 @@
+#profileForm {
+	margin-top: 1rem;
+}
+
+#details {
+	overflow: auto;
+	height: 25rem;
+}
+
+.modify-btn {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#tableUsers {
+	overflow: auto;
+	height: 20rem;
+}
+
+tbody>.btn,
+.btn-link {
+	color: black;
+}
+
+#petTabs {
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+#MFTabs {
+	margin-top: 10px;
+	margin-left: 0px;
+}

@@ -1,0 +1,163 @@
+body {
+	background: -webkit-linear-gradient(to bottom, #E1F5C4, #EDE574);
+	background: linear-gradient(to bottom, #E1F5C4, #EDE574);
+	padding-bottom: 100px;
+}
+
+hr {
+	border: none;
+	height: 20px;
+	width: 90%;
+	height: 50px;
+	margin-top: 0;
+	border-bottom: 1px solid #1f1209;
+	box-shadow: 0 20px 20px -20px #333;
+	margin: 0 0 0 0;
+}
+
+.join {
+	margin-top: 30px;
+}
+
+h3 span,
+p span {
+	font-family: 'Handlee', cursive;
+}
+
+.jumbotron-fluid {
+	background: rgba(255, 255, 255, 0.80);
+	height: 300px;
+}
+
+#incorrect-login-alert {
+	position: absolute;
+	top: -60px;
+}
+
+.lead {
+	font-family: 'Handlee', cursive;
+}
+
+.info-row {
+	margin-top: 50px;
+}
+
+.info-text {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+#appname {
+	padding-top: 3rem;
+}
+
+#buttonbar {
+	height: 30rem;
+}
+
+#loginButton {
+	height: 3rem;
+	width: 100%;
+
+	margin-bottom: 1rem;
+}
+
+#registerButton {
+	height: 3rem;
+	width: 100%;
+
+	margin-bottom: 1rem;
+}
+
+#viewPetButton {
+	height: 3rem;
+	width: 100%;
+}
+
+#personalInfo {
+	height: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+#addPet {
+	height: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+#profileForm {
+	margin-top: 1rem;
+}
+
+#emailName {
+	width: 100%;
+	margin-bottom: 1rem
+}
+
+
+#password {
+	width: 100%;
+	margin-bottom: 1rem
+}
+
+
+#loginReal {
+	height: 3em;
+	width: 100%;
+}
+
+#goBack {
+	margin-top: 10px;
+	background: none;
+	border: none;
+}
+
+#name {
+	width: 100%;
+	margin-top: 10rem;
+	margin-bottom: 1rem
+}
+
+#password {
+	width: 100%;
+	margin-bottom: 1rem
+}
+
+#registerReal {
+	height: 3rem;
+	width: 100%
+}
+
+.decision {
+	position: static;
+}
+
+.decision .btn {
+	font-size: 30px;
+}
+
+.decision .btn:hover {
+	background-color: gainsboro;
+}
+
+.decision .btn-outline-secondary:hover {
+	background-color: gainsboro;
+	background-position: 0px;
+}
+
+.decision .btn-outline-secondary:focus {
+	box-shadow: none;
+}
+
+#like i,
+p i {
+	color: #f004;
+}
+
+.heart {
+	color: plum;
+}
+
+.deny {
+	color: darkorchid;
+}

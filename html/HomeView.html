@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="HomeView.css" />
+    <link rel="stylesheet" href="ProfileMatchesOverlayViewStyles.css">
+    <link rel="stylesheet" href="Common.css">
+</head>
+
+<body>
+    <div class="home-page">
+        <nav class="navbar navbar-expand-sm shadow-lg p-2 mb-2 bg-white rounded">
+            <a class="navbar-brand" href="HomeView.html">Tinder for Pets</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="HomeView.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CommunityView.html">Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profileCreation.html">Manage profile and pets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="container home-container">
+            <div class="row">
+                <div class="rounded border col-md-10 ml-md-auto mr-md-auto selector-row shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-8 ml-md-auto mr-md-auto profile-pets-col">
+                            <ul class="pets list-inline center">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 ml-md-auto mr-md-auto">
+                            <div class="select-pet center">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                </div>
+                            </div>
+                            <div class="looking-for center">
+                                <h4>is looking for</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-filter row">
+                        <div class="ml-md-auto col-md-2">
+                            <select id="gender" class="custom-select">
+                                <option value="Any">Any</option>
+                            </select>
+                            <h6>Gender</h6>
+                        </div>
+                        <div class="col-md-2">
+                            <select id="species" class="custom-select">
+                                <option value="Any">Any</option>
+                            </select>
+                            <h6>Species</h6>
+                        </div>
+                        <div class="col-md-3 mr-md-auto">
+                            <select id="breed" class="custom-select">
+                                <option value="Any">Any</option>
+                            </select>
+                            <h6>Breed</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row carousel-row">
+                <div class="ml-md-auto col-md-7">
+                    <div class="carousel shadow-lg p-3 mb-5 bg-white rounded">
+                        <div class="photo border">
+                        </div>
+                        <div class="photo-chooser text-center">
+                            <div class="btn-group" role="group">
+                            </div>
+                        </div>
+                        <div class="information">
+                            <h3 id="name"></h3>
+                            <ul>
+                                <li id="gender"></li>
+                                <li id="age"></li>
+                            </ul>
+                            <p id="biography"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 mr-md-auto">
+                    <div class="decision btn-group-vertical shadow-lg p-2 mb-2 bg-white rounded" role="group">
+                        <button id="like" type="button" class="btn btn-outline-secondary btn-lg"><i class="fas fa-heart"></i></button>
+                        <button id="dislike" type="button" class="btn btn-outline-secondary btn-lg"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="conter">
+            <div class="row">
+                <div class="offset-md-3 col-md-3">
+                    <div class="credits">
+                        A CSC309 Fall 2018 Semester Project by<br>
+                        Kim Cao <br>
+                        Zixin Huang <br>
+                        Grant Wong
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <div class="modal fade" id="overlayModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="overlay" ondragend="restoreTabs()">
+                        <div class="container">
+                            <div class="row header">
+                                <div class="col-md-3">
+                                    <img id="profile_pic" src="/images/NA.png">
+                                </div>
+                                <div class="col-md-8" id="profile">
+                                    <h3 id="pet-name"></h3>
+                                    <p id="pet-biography"></p>
+                                    <table>
+                                        <tr>
+                                            <th>Age</th>
+                                            <th>Gender</th>
+                                            <th>Species</th>
+                                            <th>Breed</th>
+                                            <th id="relationship-goal-header">Relationship Goal</th>
+                                        <tr>
+                                            <td id="pet-age"></td>
+                                            <td id="pet-gender"></td>
+                                            <td id="pet-species"></td>
+                                            <td id="pet-breed"></td>
+                                            <td id="pet-relationship"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 nav-bar">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="matches-tab" data-toggle="tab" href="#matches"
+                                                role="tab" aria-controls="matches" aria-selected="true" title="Drop profiles here to add to matches"
+                                                ondrop=drop(event); ondragover=allowDrop(event)>Matches (<span id="n_matches"></span>)</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="favourites-tab" data-toggle="tab" href="#favourites"
+                                                role="tab" aria-controls="favourites" aria-selected="false" title="Drop profiles here to add to favourites"
+                                                ondrop=drop(event); ondragover=allowDrop(event)>Favourites (<span id="n_favourites"></span>)</a>
+                                        </li>
+                                    </ul>
+                                    <div class="remove-tab">
+                                        <img src="/images/bin.jpg" id="bin" ondrop=drop(event); ondragover=allowDrop(event);>
+                                    </div>
+                                </div>
+                                <div class="tab-content col-md-9" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="matches" role="tabpanel" aria-labelledby="matches-tab">
+                                    </div>
+                                    <div class="tab-pane fade" id="favourites" role="tabpanel" aria-labelledby="favourites-tab">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+    <!--crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="HomeView.js"></script>
+
+</html>

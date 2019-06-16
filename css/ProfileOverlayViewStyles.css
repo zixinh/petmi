@@ -1,0 +1,19 @@
+.card{
+    height: 100%;
+    /*display: inline-block;*/
+}
+
+.list-group em{
+    font-size: larger;
+    margin-left: 10px;
+}
+
+.modal-lg {
+    max-width: 75%;
+}
+
+.modal-body .col-md-8 {
+    padding-left: 2px;
+}
+
+

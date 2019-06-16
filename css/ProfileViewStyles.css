@@ -1,0 +1,29 @@
+
+.border{
+    display: flex;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: #FFFFF0;
+}
+
+#profile{
+    margin-right: 40px;
+}
+
+#profile img{
+    margin: 10px auto;
+    border: 4px solid peachpuff;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+
+
+#carouselIndicators{
+    flex: 2;
+}
+
+.list-group em{
+    font-size: larger;
+    margin-left: 15px;
+}

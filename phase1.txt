@@ -1,0 +1,76 @@
+# team25 phase1.txt
+
+Dear Owen,
+
+
+Your computer will need to have access to the internet. At the moment we rely on
+a website to generate mock pictures as well as CDNs for JQuery and Bootstrap.
+
+To explore the functionality of our web application, you can simply open
+index.html found in the root of our repository bringing the user to
+LandingPageView.html that allows the user to login, register, or browse the
+community of all the pets. We've made mock admin and user credentials.
+
+Entering insufficient or invalid credentials will bring up an alert that
+automatically dissapears after 3 seconds. If registration is succesful you will
+be brought into the main page.
+
+Logging in as an admin will bring you to the admin dashboard that's
+AdminView.html by using email 'admin@tinderforpets.com' and password 'admin'. In
+the dashboard, every user and their pet's information can be modified using the
+same functionality found during profile modification.
+
+Logging in as a user will bring you to the home page that's HomeView.html by
+using email 'cowhugger@gmail.com' and password 'trees123'. This is where the
+user can like or dislike pets that are continously shown to them in a Tinder
+swipe-left-swipe-right characteristic. You have 5 randomly generated pets in
+your account that you can choose pets from the carousel that you believe your
+selected pet will like.
+
+You can select your pet that you want to choose pets at the bottom of the
+carousel (blue buttons). You can apply a gender, species, and breed filter to
+bring up pets that meet your specification. Pets that are liked/disliked by your
+currently selected pet are not shown again. When there is a mutual match between
+the carousel pet and your selected pet, a badge will appear next to your pet on
+the right of the page next to their name. This indicates how many matches your
+pet has.
+
+Clicking on their circular picture brings up an overlay where you can manage
+your matches and favourites. In the overlay you may choose to delete a matched
+or favourite pet. The notification badge dissapears when the circular picture is
+clicked to indicate the user is aware of their matches.
+
+To test the core functionality of our web application, you can repeatedly click
+Like/Dislike for a selected pet and see the badge notification increase in value
+and end up with no more possible pets to decide on when the carousel is empty.
+
+When a user's pet circular picture is clicked, the overlay that is brought up
+functions with a drag-and-drop interface. Pets that have matched with the user's
+pet can be dragged into the bin to remove the match or dragged into favourites
+for later viewing.
+
+As well in the home page, the profile button allows the user to manage their
+personal information and pet information, or log out.
+
+Choosing to manage personal and pet information brings up
+ProfileCreationView.html where all the data about a user can be modified.
+Clicking on "Add a new pet" will create a new tab for the user to enter
+information about their pet. There are auto generated pets for the profile
+already. Clicking "save" sends all the data back to the server.
+
+Logging out brings the user back to the landing page.
+
+In the navigation bar at the top, clicking on 'community' brings the user to the
+community page. Clicking on a pet's profile brings up ProfileOverlayView.html
+which has contains the pets information and a carousel gallery of the pet's
+photos.
+
+If you would like to see where server calls to obtain, send, or manipulate data
+occurs, you can search for "// OBTAIN", "// SEND" text strings in our codebase.
+
+
+Thanks for your time.
+
+
+Sincerely,
+Team 25

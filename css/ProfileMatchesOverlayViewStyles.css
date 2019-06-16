@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+}
+
+div.modal-dialog {
+    margin-top: 30px;
+}
+
+.header #profile_pic{
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.header #profile{
+    margin: 20px;
+}
+
+.header #pet-biography{
+    font-size: larger;
+}
+
+.header td,th{
+    width: 15%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-bar{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.nav{
+    width: fit-content;
+    border: 2px solid black;
+    border-right: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav .nav-item .active{
+    color: #5cabff ;
+}
+
+.nav-link, .nav-tabs .nav-link.active {
+    background-color: transparent;
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    background-color: transparent;
+}
+
+.tab-content{
+    border: 2px solid black;
+    height: 520px;
+    overflow-y: scroll;
+}
+
+.card{
+    width: 30%;
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px 10px 20px 10px;
+    border: 1px dashed black;
+    cursor: grab;
+}
+
+.list-group-item{
+    padding: 0;
+    position: relative;
+}
+
+.list-group-item em{
+    position: absolute;
+    left: 80px;
+}
+
+.list-group-item em#contact{
+    font-size: 0.9em;
+    top: 3px;
+}
+
+.remove-tab{
+    margin-top: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+.remove-tab img{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.modal-dialog{
+    max-width: 60%;
+    margin-top: 5%;
+    opacity: 1;
+    cursor: pointer;
+}

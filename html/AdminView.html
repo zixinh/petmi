@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="AdminView.css">
+	<link rel="stylesheet" type="text/css" href="Common.css">
+	<title>Tinder for Pets</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+		<a class="navbar-brand" href="HomeView.html">Tinder for Pets</a>
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="HomeView.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="CommunityView.html">Community</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="container" id="admin">
+		<div class="row">
+			<h1 id="appname">Admin Dashboard</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<form>
+					<div class='form-group' id="searchBoxHeader">
+						<h4>Search</h4>
+					</div>
+					<div class="form-group" id="search-UserId">
+						<label for="searchUsername">Username</label>
+						<div class="form-row">
+							<div class="form-group col-md-8">
+								<input type="text" class="form-control" id="searchUsername" placeholder="Username">
+							</div>
+							<div class="form-group col-md-4">
+								<button id='searchUserButton' type="submit" class="btn btn-outline-primary">Search</button>
+							</div>
+						</div>
+					</div>
+					<div class="form-group" id="search-PetId">
+						<label for="searchPetId">PetID</label>
+						<div class="form-row">
+							<div class="form-group col-md-8">
+								<input type="text" class="form-control" id="searchPetId" placeholder="PetID">
+							</div>
+							<div class="form-group col-md-4">
+								<button id='searchPetButton' type="submit" class="btn btn-outline-primary">Search</button>
+							</div>
+						</div>
+					</div>
+				</form>
+				<hr>
+				<h4>User Database</h4>
+				<div id="tableUsers">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Username</th>
+								<th scope="col">Pet1Id</th>
+								<th scope="col">Pet2Id</th>
+								<th scope="col">Pet3Id</th>
+								<th scope="col">Pet4Id</th>
+								<th scope="col">Pet5Id</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-6" id="userDetail">
+				<h4>Details</h4>
+				<button id="personalInfo" class="btn btn-outline-primary"> Personal Information </button>
+				<button id="addPet" class="btn btn-outline-primary">Add a New Pet</button>
+				<ul class="nav nav-pills" id='petTabs' role='tablist'>
+				</ul>
+<!-- 				<ul class="nav nav-pills" id="MFTabs" roles='tablist'>
+					<li class="nav-item">
+						<a class="nav-link" id="matches-tab" data-toggle="tab" href="#matches" role="tab" aria-controls="matches"
+						 aria-selected="false">Matches <span id="n_matches"></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="favourites-tab" data-toggle="tab" href="#favourites" role="tab" aria-controls="favourites"
+						 aria-selected="false">Favourites <span id="n_favourites"></span></a>
+					</li>
+				</ul> -->
+				<hr>
+				<div class="col-md-12" id="details">
+				</div>
+				<hr>
+<!-- 				<div class="row">
+					<div class="col-md-6">
+						<button class="btn btn-outline-primary modify-btn" id="addmatchbutton">Add Match</button>
+					</div>
+					<div class="col-md-6">
+						<button class="btn btn-outline-primary modify-btn" id="addfavbutton">Add Favorite</button>
+					</div>
+				</div> -->
+				<div class="row">
+					<div class="col-md-6">
+						<button id="delete" class="btn btn-outline-primary modify-btn">Delete User</button>
+					</div>
+					<div class="col-md-6">
+						<button id="create" class="btn btn-outline-primary modify-btn">Create User</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+ <!--crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+ crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+ crossorigin="anonymous"></script>
+<script type="text/javascript" src="AdminView.js"></script>
+</html>

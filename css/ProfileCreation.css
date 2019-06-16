@@ -1,0 +1,38 @@
+#appname {
+	padding-top: 3rem;
+}
+
+#personalInfo {
+	height: 3rem;
+
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+#addPet {
+	height: 3rem;
+
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+#profileForm {
+	margin-top: 1rem;
+}
+
+#addPet {
+	margin-left: 6px;
+}
+
+#addToGallery {
+	margin-left: 6px;
+}
+
+#RemoveFromGallery {
+	margin-left: 10px;
+}
+
+#goBack{
+	float: right;
+}
+

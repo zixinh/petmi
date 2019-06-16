@@ -1,0 +1,33 @@
+{
+  "name": "team25",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csc309-fall-2018/team25.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csc309-fall-2018/team25/issues"
+  },
+  "homepage": "https://github.com/csc309-fall-2018/team25#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "express-sessions": "^1.0.6",
+    "jsonwebtoken": "^8.4.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.12",
+    "validator": "^10.9.0"
+  }
+}
