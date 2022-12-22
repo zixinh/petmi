@@ -25,7 +25,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "express-sessions": "^1.0.6",
-    "jsonwebtoken": "^8.4.0",
+    "jsonwebtoken": "^9.0.0",
     "mongodb": "^3.1.10",
     "mongoose": "^5.3.12",
     "validator": "^10.9.0"
